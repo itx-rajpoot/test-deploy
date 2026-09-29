@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav-container">
+    <a href="#home" class="logo"><span id="nav-name">My</span><b>Portfolio</b></a>
+    <button id="menu-btn" class="menu-btn" aria-label="Open menu">☰</button>
+    <nav id="navbar" class="navbar">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a>
+      <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="admin.html" class="admin-link">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+      <h1>Hi, I'm <span id="hero-name">M Umar</span></h1>
+      <h2 id="hero-title">Web Developer</h2>
+      <p id="hero-description">I create modern, responsive and user-friendly websites and web applications.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+      <div class="stats">
+        <div><strong id="project-count">0</strong><span>Projects</span></div>
+        <div><strong id="experience-count">0</strong><span>Experiences</span></div>
+        <div><strong id="skill-count">0</strong><span>Skills</span></div>
+      </div>
+    </div>
+    <div class="hero-image"><div class="profile-circle">👨‍💻</div></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-heading"><p>GET TO KNOW ME</p><h2>About Me</h2></div>
+    <div class="about-container">
+      <div class="about-image"><div class="about-placeholder">👨‍💻</div></div>
+      <div class="about-content">
+        <h3 id="about-heading">I'm a passionate Web Developer</h3>
+        <p id="about-text"></p>
+        <div class="about-info">
+          <div><strong>Name</strong><span id="about-name"></span></div>
+          <div><strong>Email</strong><span id="about-email"></span></div>
+          <div><strong>Location</strong><span id="about-location"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <div class="section-heading"><p>MY PROFESSIONAL JOURNEY</p><h2>Experience</h2></div>
+    <div id="experience-container" class="timeline"></div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-heading"><p>WHAT I CAN DO</p><h2>Skills & Scales</h2></div>
+    <div id="skills-container" class="skills-grid"></div>
+  </div>
+</section>
+
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <div class="section-heading"><p>MY RECENT WORK</p><h2>Projects</h2></div>
+    <div id="projects-container" class="projects-grid"></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-heading"><p>LET'S WORK TOGETHER</p><h2>Contact Me</h2></div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item"><span>📧</span><div><h3>Email</h3><p id="contact-email"></p></div></div>
+        <div class="contact-item"><span>📱</span><div><h3>Phone</h3><p id="contact-phone"></p></div></div>
+        <div class="contact-item"><span>📍</span><div><h3>Location</h3><p id="contact-location"></p></div></div>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <input id="contact-name-input" type="text" placeholder="Your Name" required>
+        <input id="contact-email-input" type="email" placeholder="Your Email" required>
+        <textarea id="contact-message" rows="6" placeholder="Your Message" required></textarea>
+        <button class="btn primary-btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-logo"><span id="footer-name">My</span><b>Portfolio</b></div>
+    <p>© <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+    <div class="social-links"><a id="github-link" href="#" target="_blank">GitHub</a><a id="linkedin-link" href="#" target="_blank">LinkedIn</a><a id="facebook-link" href="#" target="_blank">Facebook</a></div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

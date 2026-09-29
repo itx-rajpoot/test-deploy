@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Admin Dashboard</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="admin-layout">
+  <aside class="sidebar">
+    <div class="brand">Portfolio <span>Admin</span></div>
+    <nav>
+      <a class="active" href="#dashboard">📊 Dashboard</a>
+      <a href="#personal">👤 Personal Info</a>
+      <a href="#about-editor">📝 About</a>
+      <a href="#experience-editor">💼 Experience</a>
+      <a href="#skills-editor">📈 Skills</a>
+      <a href="#projects-editor">🚀 Projects</a>
+      <a href="#contact-editor">📞 Contact</a>
+    </nav>
+    <a class="view-site" href="index.html">← View Portfolio</a>
+  </aside>
+
+  <main class="admin-main">
+    <div class="topbar"><div><p>Portfolio Management</p><h1>Admin Dashboard</h1></div><button id="reset-data" class="danger-btn">Reset Data</button></div>
+
+    <section id="dashboard" class="dashboard-section">
+      <div class="cards">
+        <div class="card"><span>Projects</span><strong id="dash-projects">0</strong></div>
+        <div class="card"><span>Experience</span><strong id="dash-experience">0</strong></div>
+        <div class="card"><span>Skills</span><strong id="dash-skills">0</strong></div>
+        <div class="card"><span>Messages</span><strong id="dash-messages">0</strong></div>
+      </div>
+    </section>
+
+    <section id="personal" class="panel">
+      <div class="panel-title"><h2>Personal Information</h2><p>Update your main profile information.</p></div>
+      <form id="personal-form" class="form-grid">
+        <label>Full Name<input id="name" required></label>
+        <label>Professional Title<input id="title" required></label>
+        <label>Email<input id="email" type="email" required></label>
+        <label>Phone<input id="phone"></label>
+        <label>Location<input id="location"></label>
+        <label>GitHub URL<input id="github"></label>
+        <label>LinkedIn URL<input id="linkedin"></label>
+        <label>Facebook URL<input id="facebook"></label>
+        <label class="full">Hero Description<textarea id="description" required></textarea></label>
+        <div class="full"><button class="save-btn" type="submit">Save Personal Info</button></div>
+      </form>
+    </section>
+
+    <section id="about-editor" class="panel">
+      <div class="panel-title"><h2>About Section</h2></div>
+      <form id="about-form">
+        <label>About Heading<input id="about-heading-input" required></label>
+        <label>About Text<textarea id="about-text-input" rows="6" required></textarea></label>
+        <button class="save-btn" type="submit">Save About</button>
+      </form>
+    </section>
+
+    <section id="experience-editor" class="panel">
+      <div class="panel-title"><h2>Experience</h2><button id="add-experience" class="add-btn">+ Add Experience</button></div>
+      <div id="experience-list" class="editor-list"></div>
+    </section>
+
+    <section id="skills-editor" class="panel">
+      <div class="panel-title"><h2>Skills & Scales</h2><button id="add-skill" class="add-btn">+ Add Skill</button></div>
+      <div id="skills-list" class="editor-list"></div>
+    </section>
+
+    <section id="projects-editor" class="panel">
+      <div class="panel-title"><h2>Projects</h2><button id="add-project" class="add-btn">+ Add Project</button></div>
+      <div id="projects-list" class="editor-list"></div>
+    </section>
+
+    <section id="contact-editor" class="panel">
+      <div class="panel-title"><h2>Contact Information</h2></div>
+      <form id="contact-form-admin" class="form-grid">
+        <label>Email<input id="contact-email-admin" type="email" required></label>
+        <label>Phone<input id="contact-phone-admin"></label>
+        <label>Location<input id="contact-location-admin"></label>
+        <div class="full"><button class="save-btn" type="submit">Save Contact</button></div>
+      </form>
+    </section>
+  </main>
+</div>
+<div id="toast" class="toast">Saved successfully!</div>
+<script src="js/admin.js"></script>
+</body>
+</html>
